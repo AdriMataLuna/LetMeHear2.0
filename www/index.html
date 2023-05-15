@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+	<script src="app.js" ></script>
+
+    <title> LetMeHear | LOG-IN | SIGN UP </title>
+</head>
+<body onload="checkifLoged()">
+	
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+		<input type="checkbox" id="keepLog" name="keepLog" style="display:none">
+			<div class="signup">
+					<label class="homeLabel" for="chk" aria-hidden="true">Sign up</label>
+					<input id="userS" type="text" name="txt" placeholder="User name" required="">
+					<input id="emailS" type="email" name="email" placeholder="Email" required="">
+					<input id="passwordS" type="password" name="pswd" placeholder="Password" required="">
+					<button class="but" onclick="signup()">Sign up</button>
+					<button class="keepL" id="keepL1" onclick="mark()" >REMIND ME</button>
+
+			</div>
+			<div class="login">
+					<label class="homeLabel" for="chk" aria-hidden="true">Login</label>
+					<input id="emailL" type="email" name="email" placeholder="Email" required="">
+					<input id="passwordL" type="password" name="pswd" placeholder="Password" required="">
+					<button class="but" onclick="login()">Login</button>
+					<button class="keepL" id="keepL2" onclick="mark()">REMIND ME</button>
+			</div>
+	</div>
+
+</body>
+</html>
